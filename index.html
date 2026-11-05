@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10120f">
+  <meta name="description" content="Encontre seu próximo par na Dragonsnikers. Tênis urbanos, esportivos e lançamentos para todos os estilos.">
+  <link rel="icon" href="./favicon-32x32.png" type="image/png">
+  <title>Dragonsnikers — Seu próximo par começa aqui</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <svg class="icon-library" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 8.8c0 5.1-8.8 10.1-8.8 10.1S3.2 13.9 3.2 8.8a4.5 4.5 0 0 1 8.8-1.2 4.5 4.5 0 0 1 8.8 1.2Z"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M4.5 8h15l1 13h-17l1-13Z"/><path d="M8.5 9V6a3.5 3.5 0 0 1 7 0v3"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4.5 4.5L19 7"/></symbol>
+  </svg>
+
+  <div class="announcement">
+    <span>DROP 01 · SUA PRÓXIMA HISTÓRIA COMEÇA AQUI</span>
+    <span class="announcement-note">Frete grátis a partir de R$ 299</span>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Dragonsnikers, início">
+      <span class="brand-mark" aria-hidden="true">D</span>
+      <span class="brand-name">DRAGON<span>SNIKERS</span></span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
+      <a href="#colecao">Lançamentos</a>
+      <a href="#colecao" data-nav-category="lifestyle">Lifestyle</a>
+      <a href="#colecao" data-nav-category="corrida">Corrida</a>
+      <a href="#colecao" data-nav-category="futebol">Futebol</a>
+      <a class="nav-sale" href="#colecao" data-nav-category="sale">Sale <span>↓</span></a>
+    </nav>
+
+    <div class="header-actions">
+      <form class="search-box" id="searchForm" role="search">
+        <svg class="icon"><use href="#i-search"></use></svg>
+        <input id="searchInput" type="search" placeholder="Buscar tênis..." aria-label="Buscar tênis">
+        <kbd>/</kbd>
+      </form>
+      <button class="icon-button favorite-shortcut" id="favoritesButton" type="button" aria-label="Ver favoritos" title="Favoritos">
+        <svg class="icon"><use href="#i-heart"></use></svg><span class="action-count" id="favoritesCount">0</span>
+      </button>
+      <button class="icon-button bag-button" id="cartButton" type="button" aria-label="Abrir sacola" title="Sacola">
+        <svg class="icon"><use href="#i-bag"></use></svg><span class="action-count" id="cartCount">0</span>
+      </button>
+      <button class="icon-button menu-button" id="menuButton" type="button" aria-label="Abrir menu" aria-expanded="false">
+        <svg class="icon"><use href="#i-menu"></use></svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> CALÇADOS PARA IR ALÉM</div>
+        <h1 id="heroTitle">Seu próximo<br>passo é <em>seu.</em></h1>
+        <p>Do corre de todo dia ao momento que vira memória. Encontre o par que acompanha o seu ritmo.</p>
+        <a class="button button-lime" href="#colecao">Descobrir coleção <svg class="icon"><use href="#i-arrow"></use></svg></a>
+        <div class="hero-proof"><div class="proof-avatars"><span>✦</span><span>DS</span><span>+</span></div><span>Estilo que acompanha<br><strong>cada movimento</strong></span></div>
+      </div>
+      <div class="hero-visual" aria-label="Coleção de tênis em destaque" role="img">
+        <div class="hero-glow"></div>
+        <img class="hero-image" src="./download.jfif" alt="Coleção de tênis urbanos em várias cores">
+        <div class="hero-image-shade"></div>
+        <div class="hero-sticker"><span>DS / 01</span><strong>MOVE<br>YOUR WAY</strong><span>EST. 2024</span></div>
+        <div class="hero-caption"><span class="caption-line"></span><span>THE EVERYDAY<br>ICON COLLECTION</span></div>
+      </div>
+      <div class="hero-index" aria-hidden="true">01 — 04</div>
+    </section>
+
+    <div class="ticker" aria-label="Destaques da loja">
+      <div class="ticker-track"><span>MOVE DIFFERENT</span><b>✳</b><span>FEITO PRA IR</span><b>✳</b><span>SEU ESTILO, SUAS REGRAS</span><b>✳</b><span>MOVE DIFFERENT</span><b>✳</b><span>FEITO PRA IR</span><b>✳</b></div>
+    </div>
+
+    <section class="benefit-row" aria-label="Vantagens da loja">
+      <div class="benefit"><span class="benefit-icon">↗</span><div><strong>Envio para todo o Brasil</strong><small>Seu próximo par chega até você</small></div></div>
+      <div class="benefit"><span class="benefit-icon">↺</span><div><strong>Troca fácil</strong><small>Até 30 dias para trocar</small></div></div>
+      <div class="benefit"><span class="benefit-icon">◇</span><div><strong>Compra segura</strong><small>Seus dados protegidos</small></div></div>
+    </section>
+
+    <section class="catalog section-wrap" id="colecao" aria-labelledby="catalogTitle">
+      <div class="section-heading">
+        <div><div class="eyebrow"><span class="eyebrow-dot"></span> SELECIONADOS PARA VOCÊ</div><h2 id="catalogTitle">Encontre seu <em>par.</em></h2></div>
+        <p>Modelos que contam histórias.<br>Qual vai ser a sua?</p>
+      </div>
+
+      <div class="catalog-controls">
+        <div class="category-list" role="group" aria-label="Filtrar por categoria">
+          <button class="category-chip is-active" type="button" data-category="all">Todos <span>06</span></button>
+          <button class="category-chip" type="button" data-category="lifestyle">Lifestyle</button>
+          <button class="category-chip" type="button" data-category="corrida">Corrida</button>
+          <button class="category-chip" type="button" data-category="futebol">Futebol</button>
+          <button class="category-chip" type="button" data-category="casual">Casual</button>
+        </div>
+        <label class="sort-control">Ordenar por
+          <select id="sortSelect" aria-label="Ordenar produtos">
+            <option value="featured">Em destaque</option>
+            <option value="price-asc">Menor preço</option>
+            <option value="price-desc">Maior preço</option>
+            <option value="name">Nome A–Z</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="results-meta"><span id="resultsCount">06 modelos</span><button id="clearFilters" class="clear-filters" type="button" hidden>Limpar filtros <svg class="icon"><use href="#i-close"></use></svg></button></div>
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      <div class="empty-state" id="emptyState" hidden><span>⌕</span><h3>Nenhum par encontrado</h3><p>Tente outro nome ou limpe os filtros para ver a coleção toda.</p><button class="button button-dark" id="emptyReset" type="button">Ver coleção completa</button></div>
+    </section>
+
+    <section class="feature-banner">
+      <div class="feature-image"><img src="./PUMA Ultra Ultimate FG_AG Astronaut - Weiß_Orange_Blazing Blue LIMITED EDITION - Kunstrasen (AG) _ Rasen (FG), Größe 47.jfif" alt="Chuteiras para o jogo no campo"></div>
+      <div class="feature-copy"><div class="eyebrow"><span class="eyebrow-dot"></span> PARA QUEM JOGA PRA VALER</div><h2>O jogo muda.<br><em>Seu ritmo, não.</em></h2><p>Encontre a chuteira certa para dominar cada campo, cada treino e cada partida.</p><a href="#colecao" class="text-link" data-feature-category="futebol">Ver linha futebol <svg class="icon"><use href="#i-arrow"></use></svg></a></div>
+      <span class="feature-number" aria-hidden="true">DS / 02</span>
+    </section>
+
+    <section class="newsletter section-wrap" aria-labelledby="newsletterTitle">
+      <div><div class="eyebrow"><span class="eyebrow-dot"></span> FIQUE NO RADAR</div><h2 id="newsletterTitle">Drop novo. <em>Sem perder.</em></h2><p>Receba lançamentos, novidades e condições especiais direto no seu e-mail.</p></div>
+      <form id="newsletterForm" class="newsletter-form"><label class="visually-hidden" for="newsletterEmail">Seu e-mail</label><input id="newsletterEmail" type="email" placeholder="Seu melhor e-mail" required><button class="button button-lime" type="submit">Quero receber <svg class="icon"><use href="#i-arrow"></use></svg></button></form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top"><a class="brand footer-brand" href="#"><span class="brand-mark">D</span><span class="brand-name">DRAGON<span>SNIKERS</span></span></a><p>Seu estilo não para.<br>Seu próximo passo começa aqui.</p><a class="back-top" href="#">Voltar ao topo ↑</a></div>
+    <div class="footer-bottom"><span>© 2024 Dragonsnikers. Todos os direitos reservados.</span><span>Feito pra ir. <b>✳</b></span><span>Instagram &nbsp;·&nbsp; TikTok</span></div>
+  </footer>
+
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-labelledby="cartTitle" aria-hidden="true">
+    <div class="drawer-head"><div><span class="eyebrow">SEU PRÓXIMO PAR</span><h2 id="cartTitle">Sua sacola <span id="drawerCount">(0)</span></h2></div><button class="icon-button close-cart" id="closeCart" type="button" aria-label="Fechar sacola"><svg class="icon"><use href="#i-close"></use></svg></button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-empty" id="cartEmpty"><span class="empty-bag">◇</span><h3>Sua sacola está leve.</h3><p>Encontre um par que combina com você.</p><button class="button button-dark" id="continueShopping" type="button">Continuar comprando <svg class="icon"><use href="#i-arrow"></use></svg></button></div>
+    <div class="cart-summary" id="cartSummary"><div class="shipping-note"><span>✳</span> Frete grátis em compras acima de R$ 299</div><div class="summary-line"><span>Subtotal</span><strong id="cartSubtotal">R$ 0,00</strong></div><div class="summary-line summary-total"><span>Total estimado</span><strong id="cartTotal">R$ 0,00</strong></div><button class="button button-lime checkout-button" id="checkoutButton" type="button">Continuar para entrega <svg class="icon"><use href="#i-arrow"></use></svg></button><small>Frete calculado na próxima etapa</small></div>
+  </aside>
+
+  <section class="product-modal" id="productModal" role="dialog" aria-modal="true" aria-labelledby="modalProductName" aria-hidden="true">
+    <button class="icon-button modal-close" id="closeProductModal" type="button" aria-label="Fechar detalhes"><svg class="icon"><use href="#i-close"></use></svg></button>
+    <div class="modal-image"><img id="modalImage" src="" alt=""></div>
+    <div class="modal-details"><span class="eyebrow" id="modalCategory">LIFESTYLE</span><h2 id="modalProductName"></h2><div class="modal-price" id="modalPrice"></div><p id="modalDescription"></p><div class="size-heading"><strong>Escolha seu tamanho</strong><button type="button" class="size-guide" id="sizeGuide">Guia de tamanhos</button></div><div class="size-list" id="sizeList" role="group" aria-label="Tamanhos disponíveis"></div><p class="size-error" id="sizeError" hidden>Escolha um tamanho para continuar.</p><button class="button button-lime modal-add" id="modalAddToCart" type="button">Adicionar à sacola <svg class="icon"><use href="#i-bag"></use></svg></button><div class="modal-assurance">↺ &nbsp; Troca fácil em até 30 dias</div></div>
+  </section>
+
+  <section class="checkout-modal" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle" aria-hidden="true">
+    <button class="icon-button modal-close" id="closeCheckout" type="button" aria-label="Fechar checkout"><svg class="icon"><use href="#i-close"></use></svg></button>
+    <div class="checkout-heading"><span class="eyebrow">SÓ MAIS UM PASSO</span><h2 id="checkoutTitle">Finalizar <em>pedido.</em></h2><p>Preencha seus dados para revisar o pedido.</p></div>
+    <form id="checkoutForm" class="checkout-form">
+      <div class="form-row"><label>Nome completo<input name="name" autocomplete="name" required placeholder="Como podemos te chamar?"></label><label>E-mail<input name="email" type="email" autocomplete="email" required placeholder="voce@email.com"></label></div>
+      <div class="form-row"><label>CEP<input name="zip" inputmode="numeric" autocomplete="postal-code" required placeholder="00000-000" maxlength="9"></label><label>Endereço e número<input name="address" autocomplete="street-address" required placeholder="Rua, número"></label></div>
+      <label>Forma de pagamento<select name="payment" required><option value="Pix">Pix</option><option value="Cartão de crédito">Cartão de crédito</option></select></label>
+      <div class="checkout-order"><span>Resumo do pedido</span><strong id="checkoutTotal">R$ 0,00</strong></div>
+      <button class="button button-lime checkout-submit" type="submit">Revisar pedido <svg class="icon"><use href="#i-arrow"></use></svg></button>
+      <p class="demo-note">Esta loja ainda está em modo de demonstração. Nenhum pagamento será processado.</p>
+    </form>
+  </section>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"><svg class="icon"><use href="#i-check"></use></svg><span id="toastMessage"></span></div>
+  <noscript><p class="noscript">Ative o JavaScript para navegar pela coleção e usar a sacola.</p></noscript>
+</body>
+</html>
+
+
